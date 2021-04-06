@@ -1,0 +1,141 @@
+*{
+    font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #000000;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.clearfix:before,.clearfix:after,.row:before,.row:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+
+.nav ul {display: block; background: url(//cdn.shopify.com/s/files/1/0277/2835/t/30/assets/nav-brdr.png?v=11058399802704130246) left bottom no-repeat;}
+.nav ul li {float: left; width: 20%; color: #FFFFFF; position: relative; text-align: center; background: url(//cdn.shopify.com/s/files/1/0277/2835/t/30/assets/nav-brdr.png?v=11058399802704130246) right bottom no-repeat; padding-bottom: 20px;}
+.nav li a { font-family: "Lato"; font-weight: 400; font-size: 16px; color: #FFFFFF; line-height: 17px; text-transform: uppercase; text-decoration: none; }
+
+.nav .goHome a img {
+ margin-top: -12px; 
+}
+
+.nav div.sub-menu {
+  display: none;
+}
+.nav ul li:hover div.sub-menu {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  left: -30px;
+  top: 14px;
+  padding-top: 20px;
+}
+.nav ul li:hover div.sub-menu > ul:after {
+	top: 5px;
+  	left: 120px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #FFF;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.nav ul li:hover div.sub-menu > ul {
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  width: 185px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+}
+.nav ul li:hover div.sub-menu ul {
+  float: none !important;
+  padding-bottom: 8px;
+}
+.nav ul li:hover div.sub-menu ul li {
+  float: none !important;
+  background: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+.nav ul li:hover div.sub-menu ul li:first-child {
+	padding-top: 8px;
+}
+.nav ul li:hover div.sub-menu ul li a {
+  font-size: 11px !important;
+  display: block;
+  padding: 5px 10px;
+  color: #000000;
+  font-family: "Lato";
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+.nav ul li:hover div.sub-menu ul li a:hover {
+  color: #f78f1e;
+}
+/* SPRITE ICONS */
+.icon { background: url(icon-sprite.png); background-repeat: no-repeat; float: left; }
+.icon-search { background-position: 0 0px; width: 17px; height: 17px; }
+.icon-basket { background-position: -25px 0; width: 17px; height: 17px; }
+.icon-login { background-position: -50px 0; width: 17px; height: 17px; }
+.icon-arrow-small-left { background-position: -75px 0; width: 5px; height: 7px; }
+.icon-arrow-small-right { background-position: -95px 0; width: 5px; height: 7px; }
+.icon-arrow-small-down { background-position: -84px 0; width: 7px; height: 5px; }
+.icon-arrow-small-down-white { background-position: -125px -25px; width: 7px; height: 5px; }
+.icon-arrow-large-left { background-position: -75px -11px; width: 11px; height: 14px; }
+.icon-arrow-large-right { background-position: -89px -11px; width: 11px; height: 14px; }
+.icon-rss { background-position: -100px 0; width: 12px; height: 12px; }
+.icon-tag { background-position: -125px 0; width: 16px; height: 16px; }
+.icon-menu { background-position: -100px -13px; width: 21px; height: 12px; }
+.icon-pinterest { background-position: 0 -50px; width: 23px; height: 23px; }
+.icon-instagram { background-position: -25px -50px; width: 23px; height: 23px; }
+.icon-facebook { background-position: -75px -50px; width: 10px; height: 21px; }
+.icon-twitter { background-position: -50px -50px; width: 21px; height: 19px; }
+
+/* SOCIAL LINKS */
+.social-links {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	z-index: 200;
+	background: #000000;
+	width: 50px;
+}
+.social-links li {
+	border-top: solid 1px #333333;
+	float: left;
+}
+.social-links li:first-child {
+	border: none;
+}
+.social-links li a {
+	text-indent: -9999px;
+	width: 50px;
+	height: 49px;
+	background-image: url(icon-sprite.png);
+	background-repeat: no-repeat; 
+	float: left;
+}
+.social-links li a.facebook { background-position: -325px -45px; }
+.social-links li a.twitter { background-position: -275px -45px; }
+.social-links li a.instagram { background-position: -225px -45px; }
+.social-links li a.pinterest { background-position: -175px -45px; }
