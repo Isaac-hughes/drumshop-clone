@@ -1,17 +1,29 @@
 *{
-    font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #000000;
+    color: #fff;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+ul {
+    list-style-type: none;
+  }
 
 .nav-top{
     display: flex;
@@ -19,21 +31,44 @@ nav {
     width: 100%;
 }
 
-.clearfix:before,.clearfix:after,.row:before,.row:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-
-
-.nav ul {display: block; background: url(//cdn.shopify.com/s/files/1/0277/2835/t/30/assets/nav-brdr.png?v=11058399802704130246) left bottom no-repeat;}
-.nav ul li {float: left; width: 20%; color: #FFFFFF; position: relative; text-align: center; background: url(//cdn.shopify.com/s/files/1/0277/2835/t/30/assets/nav-brdr.png?v=11058399802704130246) right bottom no-repeat; padding-bottom: 20px;}
-.nav li a { font-family: "Lato"; font-weight: 400; font-size: 16px; color: #FFFFFF; line-height: 17px; text-transform: uppercase; text-decoration: none; }
-
-.nav .goHome a img {
- margin-top: -12px; 
+.clearfix:before,.clearfix:after,.row:before,.row:after{
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
-.nav div.sub-menu {
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    width: 940px;
+}
+
+.nav-menu ul li {
+    float: left;
+    width: 20%;
+    color: #FFFFFF;
+    position: relative; 
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.nav-menu li a { 
+    font-family: "Lato"; 
+    font-weight: 400; 
+    font-size: 16px; 
+    color: #FFFFFF; 
+    line-height: 17px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+}
+
+.nav-menu div.sub-menu {
   display: none;
 }
-.nav ul li:hover div.sub-menu {
+.nav-menu ul li:hover div.sub-menu {
   display: block;
   position: absolute;
   z-index: 20;
@@ -41,7 +76,7 @@ nav {
   top: 14px;
   padding-top: 20px;
 }
-.nav ul li:hover div.sub-menu > ul:after {
+.nav-menu ul li:hover div.sub-menu > ul:after {
 	top: 5px;
   	left: 120px;
 	border: solid transparent;
@@ -55,7 +90,7 @@ nav {
 	border-width: 10px;
 	margin-left: -10px;
 }
-.nav ul li:hover div.sub-menu > ul {
+.nav-menu ul li:hover div.sub-menu > ul {
   border: 1px solid #e8e8e8;
   background: #fff;
   width: 185px;
@@ -63,11 +98,11 @@ nav {
   -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
 }
-.nav ul li:hover div.sub-menu ul {
+.nav-menu ul li:hover div.sub-menu ul {
   float: none !important;
   padding-bottom: 8px;
 }
-.nav ul li:hover div.sub-menu ul li {
+.nav-menu ul li:hover div.sub-menu ul li {
   float: none !important;
   background: none;
   display: block;
@@ -76,10 +111,8 @@ nav {
   width: 100%;
   text-align: left;
 }
-.nav ul li:hover div.sub-menu ul li:first-child {
-	padding-top: 8px;
-}
-.nav ul li:hover div.sub-menu ul li a {
+
+.nav-menu ul li:hover div.sub-menu ul li a {
   font-size: 11px !important;
   display: block;
   padding: 5px 10px;
@@ -89,11 +122,11 @@ nav {
   text-transform: uppercase;
   line-height: 14px;
 }
-.nav ul li:hover div.sub-menu ul li a:hover {
+.nav-menu ul li:hover div.sub-menu ul li a:hover {
   color: #f78f1e;
 }
 /* SPRITE ICONS */
-.icon { background: url(icon-sprite.png); background-repeat: no-repeat; float: left; }
+.icon { background: url(assets/icon-sprite.png); background-repeat: no-repeat; float: left; }
 .icon-search { background-position: 0 0px; width: 17px; height: 17px; }
 .icon-basket { background-position: -25px 0; width: 17px; height: 17px; }
 .icon-login { background-position: -50px 0; width: 17px; height: 17px; }
@@ -131,7 +164,7 @@ nav {
 	text-indent: -9999px;
 	width: 50px;
 	height: 49px;
-	background-image: url(icon-sprite.png);
+	background-image: url(assets/icon-sprite.png);
 	background-repeat: no-repeat; 
 	float: left;
 }
@@ -139,3 +172,127 @@ nav {
 .social-links li a.twitter { background-position: -275px -45px; }
 .social-links li a.instagram { background-position: -225px -45px; }
 .social-links li a.pinterest { background-position: -175px -45px; }
+
+
+.easter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-image: url(assets/eggs.jpeg)
+}
+
+.threecolumn{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 615px;
+}
+
+.colA {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowA{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evans{
+    background-image: url(assets/hero-feature-1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+.ludwig{
+    background-image: url(assets/hero-feature-2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.vic{
+    background-image: url(assets/hero-feature-2-1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.zildjian{
+    background-image: url(assets/hero-feature-3.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.twocolumn{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 615px;
+}
+
+.colB {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowB{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog{
+    background-image: url(assets/hero-feature-4.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.sell{
+    background-image: url(assets/hero-feature-6.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.mapex{
+    background-image: url(assets/hero-feature-5.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+footer{
+    width: 100%;
+    margin-top: 20px;
+}
