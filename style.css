@@ -173,15 +173,46 @@ ul {
 .social-links li a.instagram { background-position: -225px -45px; }
 .social-links li a.pinterest { background-position: -175px -45px; }
 
+.bg-image {
+	opacity: 0.65;
+	transition: opacity .25s ease-in-out;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.bg-image:hover {
+	opacity: 1;
+}
+
+.info {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+
 
 .easter {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 600px;
-    background-image: url(assets/eggs.jpeg)
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.easter .bg-image {
+    background-image: url(assets/eggs.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .threecolumn{
@@ -211,35 +242,63 @@ ul {
 }
 
 .evans{
+    position: relative;
+}
+.evans .bg-image {
     background-image: url(assets/hero-feature-1.jpeg);
-    background-position: center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    
-}
-.ludwig{
-    background-image: url(assets/hero-feature-2.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-.vic{
-    background-image: url(assets/hero-feature-2-1.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-.zildjian{
-    background-image: url(assets/hero-feature-3.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
 }
 
+.ludwig{
+    position: relative;
+    height: 100%;
+}
+.ludwig .bg-image {
+    background-image: url(assets/hero-feature-2.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vic{
+    position: relative;
+    height: 100%;
+}
+.vic .bg-image {
+    background-image: url(assets/hero-feature-2-1.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zildjian{
+    position: relative;
+    height: 100%;
+}
+.zildjian .bg-image {
+    background-image: url(assets/hero-feature-3.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .twocolumn{
     width: 100vw;
     display: flex;
@@ -267,32 +326,94 @@ ul {
 }
 
 .blog{
+    position: relative;
+    height: 100%;
+}
+.blog .bg-image {
     background-image: url(assets/hero-feature-4.jpeg);
-    background-position: center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 .sell{
+    position: relative;
+    height: 100%;
+}
+.sell .bg-image {
     background-image: url(assets/hero-feature-6.jpeg);
-    background-position: center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 .mapex{
-    background-image: url(assets/hero-feature-5.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     height: 100%;
 }
+.mapex .bg-image {
+    background-image: url(assets/hero-feature-5.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.border1{
+    padding: 20px 40px !important;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    border-color: #f78f1e;
+}
 
+.hero h1 {
+	font-size: 62px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: "Lato";
+	letter-spacing: 0.1em;
+	line-height: 66px;
+}
+.hero p {
+	color: #FFFFFF;
+	font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    pointer-events: none;
+
+}
+
+.hero h2 {
+	font-size: 36px;
+    text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: "Lato";
+	letter-spacing: 0.1em;
+	line-height: 66px;
+}
 
 footer{
-    width: 100%;
+    width: 100vw;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
