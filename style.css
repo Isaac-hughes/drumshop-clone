@@ -27,10 +27,37 @@ ul {
 
 .nav-top{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     border-bottom: 1px solid #333333;
     margin-bottom: 5px;
+}
+
+.nav-top form {
+    display: flex;
+    height: 30px;
+}
+
+.nav-top input {
+    position: relative;
+    width: 85%;
+    min-width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 0px 35px 0px 5px;
+    color: #dddddd;
+    background: #555555;
+    border: none;
+    outline: none;
+}
+
+.nav-top button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 /* .clearfix:before,.clearfix:after,.row:before,.row:after{
@@ -103,39 +130,39 @@ ul {
 	margin-left: -10px;
 }
 .nav-menu ul li:hover div.sub-menu > ul {
-  border: 1px solid #e8e8e8;
-  background: #fff;
-  width: 185px;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    width: 185px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
 }
 .nav-menu ul li:hover div.sub-menu ul {
-  float: none !important;
-  padding-bottom: 8px;
+    float: none !important;
+    padding-bottom: 8px;
 }
 .nav-menu ul li:hover div.sub-menu ul li {
-  float: none !important;
-  background: none;
-  display: block;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: left;
+    float: none !important;
+    background: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
 }
 
 .nav-menu ul li:hover div.sub-menu ul li a {
-  font-size: 11px !important;
-  display: block;
-  padding: 5px 10px;
-  color: #000000;
-  font-family: "Lato";
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 14px;
+    font-size: 11px !important;
+    display: block;
+    padding: 5px 10px;
+    color: #000000;
+    font-family: "Lato";
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 14px;
 }
 .nav-menu ul li:hover div.sub-menu ul li a:hover {
-  color: #f78f1e;
+    color: #f78f1e;
 }
 /* SPRITE ICONS */
 .icon { background: url(assets/icon-sprite.png); background-repeat: no-repeat; float: left; }
