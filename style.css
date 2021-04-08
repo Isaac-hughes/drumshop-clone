@@ -84,15 +84,17 @@ ul {
 }
 
 .main-list {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 
-.nav-menu .main-menu {
-    width: 15%;
+.main-menu {
+    min-width: 0;
+    position: relative;
+    width: 20vw !important;
 }
 
 .nav-menu ul li {
@@ -558,7 +560,7 @@ footer h5 {
         width: auto;
     }
     .main-menu{
-        width: 30%;
+        width: 33.33% !important;
     }
     .footA{
         width: 100%;
